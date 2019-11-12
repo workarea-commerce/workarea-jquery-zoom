@@ -12,9 +12,11 @@ Gem::Specification.new do |s|
   s.homepage    = "https://github.com/workarea-commerce/workarea-jquery-zoom"
   s.summary     = "Add image zoom capabilities on touch enabled devices."
   s.description = "Let your user pinch, drag and tap (zoom-in, zoom-out) your beautiful thumbnails."
-  
+
   s.files = `git ls-files`.split("\n")
-  
+
   s.add_dependency 'workarea', '~> 3.x'
   s.add_dependency 'hammerjs-rails'
+
+  s.license = 'Business Software License'
 end
