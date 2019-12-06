@@ -92,6 +92,7 @@ $(cat CHANGELOG.md)" > CHANGELOG.md'
   system 'git push --tags'
 
   system "gem build workarea-jquery_zoom.gemspec"
+  system "gem push workarea-jquery_zoom-#{Workarea::JqueryZoom::VERSION}.gem"
   system "gem push workarea-jquery_zoom-#{Workarea::JqueryZoom::VERSION}.gem --host #{host}"
   system "rm workarea-jquery_zoom-#{Workarea::JqueryZoom::VERSION}.gem"
 end
